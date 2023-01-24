@@ -10,6 +10,11 @@ int main(void)
        	_printf("Character:[%c]\n", 'H');
 	  printf("Character:[%c]\n", 'H');
 	printf("%d\n %d\n", len, len2);
+
+	int retu1 =	_printf("%");
+	printf("%d\n", retu1);
+	int retu2 = 	printf("%.");
+	printf("%d\n", retu2);
 	
 
 	return (0);

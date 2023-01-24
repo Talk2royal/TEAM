@@ -10,14 +10,14 @@
 int _printf(const char *format, ...)
 {
 
-	int len = strlen(format);
+	int len;
 
 	va_list arg;
 
 	if (!format)
 		return (-1);
 	va_start(arg, format);
-	print_all_format(format, arg);
+	len = print_all_format(format, arg);
 	va_end(arg);
 	return (len);
 }
@@ -36,6 +36,8 @@ int print_all_format(const char *string, va_list identifier)
 
 	lenght = strlen(string);
 	i = 0;
+
+	//printf("hello, %s", melvin);
 	while (i < lenght)
 	{
 		if (string[i] != '%')
