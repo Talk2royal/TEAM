@@ -1,4 +1,4 @@
-#include "header.h"
+#include "main.h"
 #include <stdio.h>
 int main(void)
 {
@@ -10,5 +10,7 @@ int main(void)
        	_printf("Character:[%c]\n", 'H');
 	  printf("Character:[%c]\n", 'H');
 	printf("%d\n %d\n", len, len2);
+	
+
 	return (0);
 }
